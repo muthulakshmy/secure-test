@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Secure Test Environment</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header class="header">
+      <h2>Secure Test Environment</h2>
+      <div id="timerBox">🕜 Time Left: <span id="timer">30:00</span></div>
+    </header>
+
+    <section class="instructions">
+      <h3>Test Instructions</h3>
+      <ul>
+        <li>Do not switch tabs</li>
+        <li>Do not copy/paste</li>
+        <li>Do not open developer tools</li>
+        <li>Do not refresh page</li>
+        <li>It is best to take the test in fullscreen mode.</li>
+
+
+      </ul>
+    </section>
+
+    <section class="questionBox">
+      <h3>Question 1</h3>
+      <p>What is the difference between == and === in JavaScript?</p>
+
+      <textarea id="answer" placeholder="Type your answer here..."></textarea>
+
+      <button onclick="submitTest()">Submit Test</button>
+    </section>
+
+    <section class="logs">
+      <h4>Live Activity Logs</h4>
+      <div id="logPanel"></div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
