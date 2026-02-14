@@ -63,7 +63,7 @@ setInterval(() => {
     logEvent("WATERMARK_TAMPER");
     violation();
     if (!watermarkAlertShown) {
-      alert("Watermark removed!");
+      alert("Watermark Tamper Attempted!");
       watermarkAlertShown = true;
     }
     renderWatermark();
