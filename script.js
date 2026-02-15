@@ -1,7 +1,7 @@
 const ATTEMPT_ID = "ATTEMPT-12345";
 const CANDIDATE = {
-  name: "Demo Candidate",
-  email: "demo@example.com"
+  name: "Mock Candidate",
+  email: "mock.candidate@gmail.com"
 };
 const EVENT_KEY = "secure-test-events";
 
@@ -125,7 +125,7 @@ window.addEventListener("load", () => {
 });
 
 // Timer
-let time = 30 * 60;
+let time = 10 * 60;
 
 const timerInterval = setInterval(() => {
   const min = Math.floor(time / 60);
@@ -135,7 +135,6 @@ const timerInterval = setInterval(() => {
     `${min}:${sec.toString().padStart(2, "0")}`;
 
   time--;
-
   if (time <= 0) {
     clearInterval(timerInterval);
     submitTest();
