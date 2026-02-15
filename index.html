@@ -32,17 +32,18 @@
     <section class="questionBox">
       <h3>Question 1</h3>
       <p>What is the difference between == and === in JavaScript?</p>
-
       <textarea id="answer" placeholder="Type your answer here..."></textarea>
-
-      <button onclick="submitTest()">Submit Test</button>
+      <div class="btn-container">
+        <button onclick=submitTest()>Submit Test</button>
+      </div>
     </section>
 
+
+    <button id="toggleLogsBtn">Show Logs</button>
     <section class="logs">
       <h4>Live Activity Logs</h4>
-      <div id="logPanel"></div>
+      <div id="logPanel" style="display: none;"></div>
     </section>
-
   </div>
 
   <script src="script.js"></script>

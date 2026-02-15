@@ -62,6 +62,12 @@ button:hover {
   background: #15803d;
 }
 
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
 /* Log Panel */
 .logs {
   background: black;

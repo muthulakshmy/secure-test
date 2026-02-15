@@ -194,6 +194,26 @@ function submitTest() {
 }
 
 
+const toggleBtn = document.getElementById("toggleLogsBtn");
+const logPanel = document.getElementById("logPanel");
+
+let logsVisible = false;
+
+if (toggleBtn && logPanel) {
+  toggleBtn.addEventListener("click", () => {
+    logsVisible = !logsVisible;
+
+    if (logsVisible) {
+      logPanel.style.display = "block";
+      toggleBtn.textContent = "Hide Logs";
+    } else {
+      logPanel.style.display = "none";
+      toggleBtn.textContent = "Show Logs";
+    }
+  });
+}
+
+
 // Initialize
 renderWatermark();
 logEvent("TEST_STARTED");
